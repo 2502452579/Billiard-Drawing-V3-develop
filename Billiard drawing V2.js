@@ -197,7 +197,6 @@ function getClick() {
     });
 }
 
-
 //悬浮直线方法 传入坐标与旋转角度
 function createLine(x, y, z) {
     log("执行createLine方法");
@@ -224,6 +223,7 @@ function createLine(x, y, z) {
 
 //寻找球坐标并click
 function findBall(colorCode) {
+	
     log("执行findBall方法");
     if (!requestScreenCapture()) {
         toast("啊哦 出现了一个致命错误(e-rs)");
@@ -266,4 +266,14 @@ function findBall(colorCode) {
     } else {
         toast("啊哦 出现了一个错误 请截屏反馈给开发者(e-fc)");
     }
+}
+
+//计算球碰撞到边框的反弹
+function bound(boundAngle) {
+	
+}
+
+//计算主球与球的碰撞
+function collision(collision) {
+	
 }
